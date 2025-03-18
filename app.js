@@ -15,13 +15,13 @@ function addTodo(event){
     event.preventDefault(); //Prevents form from submitting when clicking button
     //Todo DIV
     if (todoInput.value != "") { //only allows adding a todo if the user actually inputs text
-        const todoDiv = document.createElement('div'); //creates a new div
+        const todoDiv = document.createElement('div'); //creates a new div (parent)
         todoDiv.classList.add('todo');
         //Create List
         const newTodo = document.createElement('li'); //creates a list
         newTodo.innerText = todoInput.value; //Uses the user input as the text
         newTodo.classList.add('todo-item'); //used to style css
-        todoDiv.appendChild(newTodo); //appends the list to the div
+        todoDiv.appendChild(newTodo); //appends the list (child) under the div (parent)
         //ADD todo to local storage
         saveLocalTodos(todoInput.value);
         //Check Mark Button
