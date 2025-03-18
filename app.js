@@ -17,7 +17,7 @@ function addTodo(event){
     if (todoInput.value != "") { //only allows adding a todo if the user actually inputs text
         const todoDiv = document.createElement('div'); //creates a new div
         todoDiv.classList.add('todo');
-        //Create LI
+        //Create List
         const newTodo = document.createElement('li'); //creates a list
         newTodo.innerText = todoInput.value; //Uses the user input as the text
         newTodo.classList.add('todo-item'); //used to style css
