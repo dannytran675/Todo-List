@@ -1,6 +1,6 @@
 //Selectors
-const todoInput = document.querySelector('.todo-input');
-const todoButton = document.querySelector('.todo-button');
+const todoInput = document.querySelector('.todo-input'); //Selectors that gets an element based on its class in HTML
+const todoButton = document.querySelector('.todo-button'); //const meaning the variable cannot be redeclared or reassigned
 const todoList = document.querySelector('.todo-list');
 const filterOption = document.querySelector('.filter-todo');
 
@@ -91,7 +91,7 @@ function filterTodo(e) {
 
 function saveLocalTodos(todo) {
     //Check if I already have a todo
-    let todos;
+    let todos; //let meaning the variable only exists within the scope of this function
     if(localStorage.getItem('todos') === null) {
         todos = [];
     } else {
